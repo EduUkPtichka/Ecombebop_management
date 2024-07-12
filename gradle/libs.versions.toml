@@ -1,0 +1,135 @@
+[versions]
+# ---------- Android Setting -----------
+compose-compiler-version = "1.5.13"
+android-compileSdk = "34"
+android-minSdk = "24"
+android-targetSdk = "34"
+
+# ----------- Plugin Version -----------
+agp = "8.3.0"
+ksp = "2.0.0-1.0.21"
+kotlinPlugin = "2.0.0"
+mokoPlugin = "0.24.1"
+kmp-nativecoroutines = "1.0.0-ALPHA-31"
+
+# ----------- Android, Google ----------
+androidx-activityCompose = "1.9.0"
+cameraCoreV = "1.3.4"
+compose = "1.6.8"
+
+# ------------- Jetbrains -------------
+jetbrains-composeV = "1.6.11"
+ktor-client = "2.3.12"
+kotlinxCoroutinesCore = "1.8.1"
+kotlinxSerializationJson = "1.6.3"
+kotlinxCollectionsImmutable = "0.3.7"
+
+# Coil
+coil3 = "3.0.0-alpha06"
+
+# Decompose
+decomposeV = "3.2.0-alpha02"
+essentyV = "2.2.0-alpha02"
+
+# MVI
+mvikotlinV = "4.1.0"
+mvikotlin-extensionsCoroutines = "4.1.0"
+
+# Arrow
+arrow = "1.2.4"
+
+# Koin
+koin = "3.5.6"
+koin-compose = "1.0.4"
+
+# Moko
+moko-resourcesV = "0.24.1"
+moko-graphicsV = "0.9.0"
+
+[libraries]
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+
+compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
+compose-material = { module = "androidx.compose.material:material", version.ref = "compose" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+
+# Compose Multiplatform
+jetbrains-composeRuntime = { module = "org.jetbrains.compose.runtime:runtime", version.ref = "jetbrains-composeV" }
+jetbrains-composeMaterial = { module = "org.jetbrains.compose.material:material", version.ref = "jetbrains-composeV" }
+jetbrains-composeFoundation = { module = "org.jetbrains.compose.foundation:foundation", version.ref = "jetbrains-composeV" }
+jetbrains-composeUi = { module = "org.jetbrains.compose.ui:ui", version.ref = "jetbrains-composeV" }
+
+# CameraX
+androidx-camera-core = { module = "androidx.camera:camera-core", version.ref = "cameraCoreV" }
+
+# Coil
+coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil3" }
+coil-compose-core = { module = "io.coil-kt.coil3:coil-compose-core", version.ref = "coil3" }
+coil-network-ktor = { module = "io.coil-kt.coil3:coil-network-ktor", version.ref = "coil3" }
+coil3 = { module = "io.coil-kt.coil3:coil", version.ref = "coil3" }
+
+# Jetbrains Coroutines
+jetbrains-kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+jetbrains-kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesCore" }
+jetbrains-kotlinx-coroutines-guava = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-guava", version.ref = "kotlinxCoroutinesCore" }
+jetbrains-kotlinx-coroutines-core-iosx64 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-iosx64", version.ref = "kotlinxCoroutinesCore" }
+
+# Serialisation
+jetbrains-kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+
+# Jetbrains Immutable Collections
+jetbrains-kotlinxCollectionsImmutable = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version.ref = "kotlinxCollectionsImmutable" }
+
+# Jetbrains Ktor-Client
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor-client" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor-client" }
+ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor-client" }
+ktor-client-logging = { module = "io.ktor:ktor-clent-logging", version.ref = "ktor-client" }
+ktor-client-json = { module = "io.ktor:ktor-clent-json", version.ref = "ktor-client" }
+ktor-client-serialization = { module = "io.ktor:ktor-client-seserialization", version.ref = "ktor-client" }
+
+# Decompose
+arkivanov-decompose = { module = "com.arkivanov.decompose:decompose", version.ref = "decomposeV" }
+arkivanov-decompose-extensionsCompose = { module = "com.arkivanov.decompose:extensions-compose", version.ref = "decomposeV" }
+arkivanov-essenty-lifecycle = { module = "com.arkivanov.essenty:lifecycle", version.ref = "essentyV" }
+arkivanov-essenty-stateKeeper = { module = "com.arkivanov.essenty:state-keeper", version.ref = "essentyV" }
+
+# MVI
+arkivanov-mvikotlin = { module = "com.arkivanov.mvikotlin:mvikotlin", version.ref = "mvikotlinV" }
+arkivanov-mvikotlinMain = { module = "com.arkivanov.mvikotlin:mvikotlin-main", version.ref = "mvikotlinV" }
+arkivanov-mvikotlinExtensionsCoroutines = { module = "com.arkivanov.mvikotlin:mvikotlin-extensions-coroutines", version.ref = "mvikotlin-extensionsCoroutines" }
+arkivanov-mvikotlinLogger = { module = "com.arkivanov.mvikotlin:mvikotlin-logging", version.ref = "mvikotlinV" }
+arkivanov-mvikotlinTimetravel = { module = "com.arkivanov.mvikotlin:mvikotlin-timetravel", version.ref = "mvikotlinV" }
+
+# Arrow
+arrow-core = { module = "io.arrow-kt:arrow-core", version.ref = "arrow" }
+arrow-fx-coroutines = { module = "io.arrow-kt:arrow-fx-coroutines", version.ref = "arrow" }
+arrow-optics = { module = "io.arrow-kt:arrow-optics", version.ref = "arrow" }
+arrow-ksp = { module = "io.arrow-kt:arrow-optics-ksp-plugin", version.ref = "arrow" }
+
+# Koin
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koin-compose" }
+
+# Moko
+moko-resources = { module = "dev.icerock.moko:resources", version.ref = "moko-resourcesV" }
+moko-graphics = { module = "dev.icerock.moko:graphics", version.ref = "moko-graphicsV" }
+moko-resourcesCompose = { module = "dev.icerock.moko:resources-compose", version.ref = "moko-resourcesV" }
+
+# ------ Plugins -------
+moko-resourcesGenerator = { module = "dev.icerock.moko:resources-generator", version.ref = "mokoPlugin" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+google-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+jetbrains-kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinPlugin" }
+jetbrains-kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlinPlugin" }
+jetbrains-kotlinCocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlinPlugin" }
+jetbrains-kotlinPluginSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlinPlugin" }
+jetbrains-compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlinPlugin" }
+icerock-mokoMobileMultiplatformResources = { id = "dev.icerock.mobile.multiplatform-resources", version.ref = "mokoPlugin" }
+rickclephas-kmp-nativecoroutines = {id = "com.rickclephas.kmp.nativecoroutines", version.ref = "kmp-nativecoroutines"}
